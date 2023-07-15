@@ -1,24 +1,30 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import './components/utils';
+// import { Dropdown } from 'bootstrap';
+import './components/utils';
+import FormComponent from './components/form';
+import BrandDropDown from './components/branddropdown';
+import carmodel from './components/modeldropdown';
+import ModelDropDown from './components/modeldropdown';
+import DropdownContainer from './components/dropdowncontainer';
+import MapContainer from './components/Map';
+
 
 class App extends Component {
   render() {
     return (
       <div className="App">
+        
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
+         <h1>Get The Rates !!</h1>
+         
           <p>
-            Hello from Render!
+            Enter the following details
           </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
+       
+         <FormComponent  />
         </header>
       </div>
     );
